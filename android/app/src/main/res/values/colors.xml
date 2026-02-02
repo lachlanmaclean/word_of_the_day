@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warm orange splash background (matches app branding image) -->
+    <color name="splash_background">#E0782E</color>
+</resources>

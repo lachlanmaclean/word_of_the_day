@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sid's Word of the Day – Expand your vocabulary, one word at a time</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #FBF9F4;
+      --text-primary: #2D2E30;
+      --text-secondary: #6F7073;
+      --accent: #E6AF2E;
+      --accent-light: #F7DCB4;
+      --pill-gray: #EAEAEA;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Source Sans 3', sans-serif;
+      background-color: var(--cream);
+      color: var(--text-primary);
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* Hero */
+    header {
+      padding: 48px 0 64px;
+      text-align: center;
+    }
+
+    .hero-image {
+      width: 200px;
+      height: auto;
+      margin-bottom: 24px;
+      border-radius: 24px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 0 0 12px;
+    }
+
+    .tagline {
+      font-size: 1.125rem;
+      color: var(--text-secondary);
+      margin: 0 0 32px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: var(--accent);
+      color: var(--text-primary);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .cta:hover {
+      opacity: 0.9;
+    }
+
+    /* Features */
+    section {
+      padding: 48px 0;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0 0 24px;
+      text-align: center;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      margin-top: 32px;
+    }
+
+    .feature {
+      text-align: center;
+      padding: 24px 20px;
+      background: var(--pill-gray);
+      border-radius: 16px;
+    }
+
+    .feature-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 16px;
+      background: var(--accent-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+    }
+
+    .feature h3 {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0 0 8px;
+    }
+
+    .feature p {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    /* Footer */
+    footer {
+      padding: 32px 28px 48px;
+      text-align: center;
+      border-top: 1px solid var(--pill-gray);
+      margin-top: 32px;
+    }
+
+    footer p {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      margin: 0 0 16px;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="images/sid_reading.png" alt="Sid the cat with a book" class="hero-image">
+      <h1>Sid's Word of the Day</h1>
+      <p class="tagline">Expand your vocabulary, one word at a time. A daily dose of smarter words, made with love in New Zealand.</p>
+      <a href="#" class="cta" id="cta-playstore">Get it on the Play Store</a>
+    </header>
+
+    <section>
+      <h2>Why Sid's Word of the Day?</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">📖</div>
+          <h3>One word a day</h3>
+          <p>Clear, focused learning. One new word every day, with definition and an example sentence.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔔</div>
+          <h3>Daily reminder</h3>
+          <p>Set a time that suits you and never miss your word of the day.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📚</div>
+          <h3>Previous words</h3>
+          <p>Browse the last 7 days anytime from Settings and revisit what you've learned.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Made with love in New Zealand ❤️</p>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-use.html">Terms of Use</a>
+    </div>
+  </footer>
+</body>
+</html>

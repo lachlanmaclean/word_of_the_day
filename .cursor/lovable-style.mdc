@@ -1,0 +1,33 @@
+---
+alwaysApply: true
+---
+Use this design system for all apps unless the user asks for something different.
+Aesthetic: Clean, minimal, warm, and readable. Feels like paper and soft light. No heavy chrome or busy UI.
+Color palette:
+Background: Off-white / cream #FBF9F4
+Primary text: Dark gray, almost black #2D2E30
+Secondary text / labels: Medium gray #6F7073
+Accent (active, emphasis, icons): Muted gold/orange #E6AF2E
+Accent light (pills, subtle highlights): Light gold #F7DCB4
+Neutral surfaces (pills, chips): Light gray #EAEAEA
+Typography:
+Display / hero: Elegant serif (e.g. Playfair Display). Large, bold, for the main focal element.
+Body & UI: Clean sans-serif (e.g. Source Sans 3, or similar). Use for labels, definitions, body copy, buttons.
+Labels: Uppercase, small (e.g. 11–13px), medium weight (w600), letter-spacing ~1–1.2, secondary gray.
+Body: 16px, line-height ~1.5–1.6, primary text color.
+Layout & spacing:
+Generous padding (e.g. 24px horizontal, 16–24px vertical).
+Clear vertical rhythm: 8px between label and content, 24–32px between major sections, 48px before footers.
+Center hero/header content; left-align content blocks (definitions, lists, paragraphs).
+Use SafeArea / safe insets on mobile so content doesn’t sit under notches or system UI.
+Components:
+Pills / chips: Rounded rectangles (e.g. borderRadius: 20 or “pill” shape). Use #EAEAEA for neutral, #F7DCB4 for accent. Optional small accent dot (8px circle in #E6AF2E) for status or emphasis.
+Callouts / quotes: Left border only, 4px, accent color #E6AF2E; padding on the right of the border. Slight rounding on the border side only if desired.
+Headers: Centered icon (accent color) + short label in secondary gray, uppercase, letter-spacing.
+Footer: Single line, centered, small, secondary gray; optional short tagline.
+Flutter specifics (when building in Flutter):
+Use google_fonts: Playfair Display for display text, Source Sans 3 for body and labels.
+Define the palette as const Color values and use them in ThemeData (e.g. scaffoldBackgroundColor, colorScheme, textTheme).
+Prefer useMaterial3: true. Avoid default bright Material accent; override with the gold accent above.
+Use BorderRadius.circular(20) for pills; use Border(left: BorderSide(...)) for the example/callout style.
+Don’t: Use bright purples/blues as primary, cramped layouts, all-caps for long body text, or heavy borders/shadows. Keep the overall look light and calm.
