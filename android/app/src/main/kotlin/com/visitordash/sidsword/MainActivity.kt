@@ -1,4 +1,4 @@
-package com.example.word_of_the_day
+package com.visitordash.sidsword
 
 import io.flutter.embedding.android.FlutterActivity
 
